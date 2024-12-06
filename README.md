@@ -1,19 +1,40 @@
-# MURDERWIKI
+# Welcome to Remix!
 
-The blog and wiki site/sub-site for talesofmurder.com. Hosted at `murderwiki.talesofmurder.com` and redirected to from `murderwiki.com`.
+- 📖 [Remix docs](https://remix.run/docs)
 
-Built using Remix.run and using the Sanity CMS as its content store. It uses the talesofmurder-ui private npm package to manage styles and branding.
+## Development
 
-Takes the current (as of 06.12.24) `remixdev` branch on the cc_nos repo and tweaks it.
+Run the dev server:
 
-2024-11-30
+```shellscript
+npm run dev
+```
 
-- git reset hard to #9349ed8 in order to kill the (badly motivated) attempts to move all storefront components to a common area for use across both storefront and the remix site. It occurred to me that that was massive overkill and complication because storefront ALREADY manages the pages I was building in the remix app.
-    - See ChatGPT chat: https://chatgpt.com/c/674b06aa-cef8-8002-bc8c-bd737c51011f for specifics and the plan moving forward.
+## Deployment
 
-1. clean up storefront to fit my branding and content
-2. build content ... aim for 5 by 2024.12.09 and 50 by end of year
-3. get ads running by Monday with an lp for the 5 bundle
+First, build your app for production:
 
+```sh
+npm run build
+```
 
+Then run the app in production mode:
 
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.

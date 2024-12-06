@@ -1,17 +1,5 @@
-# Build outputs and caches
+node_modules
+
 /.cache
 /build
-
-# Logs
-/logs
-*.log
-
-# Misc
-.DS_Store
-*.pem
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
+.env

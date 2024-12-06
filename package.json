@@ -1,5 +1,5 @@
 {
-  "name": "remix",
+  "name": "frontend",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@portabletext/react": "^3.1.0",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-progress": "^1.1.0",
+    "@radix-ui/react-scroll-area": "^1.2.0",
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@remix-run/node": "^2.11.1",
@@ -32,8 +34,8 @@
     "lucide-react": "^0.427.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "semver": "^7.6.3",
-    "tailwind-merge": "^2.5.2",
+    "resend": "^4.0.1-alpha.0",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
@@ -58,6 +60,5 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  },
-  "packageManager": "yarn@4.5.3+sha512.3003a14012e2987072d244c720506549c1aab73ee728208f1b2580a9fd67b92d61ba6b08fe93f6dce68fd771e3af1e59a0afa28dd242dd0940d73b95fedd4e90"
+  }
 }
