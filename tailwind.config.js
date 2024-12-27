@@ -51,6 +51,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        murder: {
+          DEFAULT: '#8b0000',
+          light: '#a52a2a',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,7 +76,8 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        breamcatcher: ['Breamcatcher', 'sans-serif'],
+        'serif': ['Breamcatcher', 'Georgia', 'serif'],
+        'sans': ['system-ui', 'sans-serif'],
       },
     },
   },

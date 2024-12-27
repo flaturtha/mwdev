@@ -10,8 +10,12 @@ import "./tailwind.css";
 import FacebookPixel from "~/components/FacebookPixel";
 import KlaviyoScript from '~/components/KlaviyoScript';
 import GoogleTagManager from '~/components/GoogleTagManager';
+import fontStyles from "~/styles/fonts.css";
+import Spinner from '~/components/Spinner';
+import { LoadingProvider } from '~/context/LoadingContext';
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: fontStyles },
   { 
     rel: "stylesheet", 
     href: "https://fonts.cdnfonts.com/css/breamcatcher" 
@@ -33,11 +37,13 @@ export default function App() {
         <FacebookPixel />
       </head>
       <body>
-        <GoogleTagManager gtmId="GTM-WTZTP869" />
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <KlaviyoScript />
+        <LoadingProvider>
+          <GoogleTagManager gtmId="GTM-WTZTP869" />
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <KlaviyoScript />
+        </LoadingProvider>
       </body>
     </html>
   );
