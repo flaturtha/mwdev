@@ -8,13 +8,14 @@ export default function Header() {
           {/* Logo/Site Title */}
           <div className="text-center">
             <Link to="/" className="block">
-              <h1 className="text-4xl font-breamcatcher tracking-wider">THE MURDERWIKI</h1>
-              <p className="text-sm text-gray-600">A Vintage Mystery Archive</p>
+              <h1 className="text-4xl font-serif tracking-wider">THE MURDERWIKI</h1>
+              <p className="font-serif text-gray-600">The Definitive Mystery Fiction Encyclopædia</p>
             </Link>
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex space-x-8 mt-4 text-sm">
+          <nav className="hidden space-x-8 mt-4 text-sm">
+            {/* add md:flex back to the nav classname to show them on desktop */}
             <Link to="/articles" className="hover:text-murder transition-colors">Articles</Link>
             <Link to="/collections" className="hover:text-murder transition-colors">Collections</Link>
             <Link to="/authors" className="hover:text-murder transition-colors">Authors</Link>

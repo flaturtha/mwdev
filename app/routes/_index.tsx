@@ -38,7 +38,7 @@ export default function Index() {
             <div className="absolute bottom-0 left-0 right-0 text-center pb-4">
               <h1 className="text-4xl font-serif mb-1">THE MURDERWIKI</h1>
               <p className="text-lg px-4 font-serif mb-3">
-                The Definitive Mystery Fiction Encyclopædia:
+                The Definitive Mystery Fiction Encyclopædia
               </p>
               <span className="text-base bg-murder text-white px-3 py-1 italic tracking-widest inline-block">
                 The Who, What, Where, When, & Why They 'Dunit'
@@ -68,7 +68,7 @@ export default function Index() {
         <div className="hidden sm:block py-1 px-4 mt-4">
           <h1 className="text-5xl font-serif mb-0">THE MURDERWIKI</h1>
           <p className="text-xl mb-3 font-serif">
-            The Definitive Mystery Fiction Encyclopædia:
+            The Definitive Mystery Fiction Encyclopædia
           </p>
           <span className="text-base bg-murder text-white px-3 py-1 italic tracking-widest inline-block">
             The Who, What, Where, When, & Why They 'Dunit'
@@ -173,9 +173,9 @@ export default function Index() {
                 <h3 className="text-xl font-semibold mb-2">The Mystery of Edwin Drood by Charles Dickens</h3>
                 <p className="mb-4">Charles Dickens' final, unfinished novel has puzzled readers for over 150 years. This mysterious tale of love, jealousy, and murder in the fictional town of Cloisterham continues to captivate audiences with its unresolved plot and vivid characters.</p>
                 <p className="mb-4">The story revolves around Edwin Drood, his uncle John Jasper, Rosa Bud, and the Landless twins. Set against the backdrop of a Cathedral town, the novel explores themes of obsession, addiction, and the duality of human nature.</p>
-                <button className="bg-murder hover:bg-murder-light text-white px-4 py-2 rounded transition-colors">
+                <a href="/articles/wilkie-collins" className="bg-murder hover:bg-murder-light text-white px-4 py-2 rounded transition-colors inline-block">
                   Read More
-                </button>
+                </a>
               </div>
             </div>
           </section>
